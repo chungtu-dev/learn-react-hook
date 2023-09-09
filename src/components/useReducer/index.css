@@ -1,0 +1,90 @@
+.cube{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: anim 2s infinite ease-out;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.outercube{
+    width: 10vw;
+    height: 10vw;
+    background-color: #9bb7ef;
+}
+.innercube{
+    width: 5vw;
+    height: 5vw;
+    background-color: #c2bebd;
+}
+.innercube2{
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: #ffbb70;
+}
+@keyframes anim{
+    0%{
+        transform: translate(-50%, -50%)rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+}
+
+.container_form{
+ background-color: #9bb7ef;   
+ padding: 20px 0px;
+ margin: 20px 60px;
+ border-radius: 30px
+}
+.input_form{
+    background-color: #eee5e2;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    width: 40%;
+    height: 30px;
+    padding: 10px;
+}
+.btn_form{
+    height: 45px;
+    width: 70px;
+    border: none;
+    cursor: pointer;
+    background: #ffbb70;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn_form:hover{
+    background: #368e53;
+    color: white;
+}
+.lst_todo{
+    list-style: none;
+    color: black;
+    margin: 10px 90px;
+}
+.lst_todo > p{
+    font-weight: bold;
+    padding: 5px;
+    margin-top:10px;
+    background-color: #26998c;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.lst_todo > p > li{
+    padding: 0 10px 0 0px;
+    margin: 0 10px 0 0;
+    border-right: 1px solid;
+}
+.lst_todo > p > button{
+    border: none;
+    background-color: rgb(190, 40, 38);
+    color: white;
+    cursor: pointer;
+    border-radius:5px;
+    width: 50px;
+}

@@ -1,0 +1,1 @@
+thay vì phải import ở nhiều component thì chỉ việc custom import ở hooks để khi cần import cái nào thì gọi đến hooks
